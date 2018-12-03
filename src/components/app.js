@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import LoginForm from './form.js'; 
+import SignUpForm from './form.js';
+import LoginForm from './login'
+//import ProjectList from './project_list';
+
 
 export default class App extends Component {
   render() {
     return (
       <div>
-      	<LoginForm />
+      	{this.props.children}
       </div>
     );
   }
